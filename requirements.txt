@@ -1,0 +1,42 @@
+# ICTone requirements
+# Tested with Python 3.10.16 (CPython) + CUDA 12.x
+# Install:
+#   conda create -n ictone python=3.10 -y && conda activate ictone
+#   pip install -r requirements.txt
+#   pip install -U huggingface_hub
+
+# ---- Deep learning stack ----
+torch==2.8.0
+torchvision==0.23.0
+triton==3.4.0
+diffusers==0.39.0
+transformers==4.57.6
+accelerate==1.12.0
+peft==0.18.0
+safetensors==0.8.0
+huggingface-hub==0.36.0
+sentencepiece==0.2.1
+protobuf==7.35.1
+
+# ---- Training ----
+lightning==2.6.5
+pytorch-lightning==2.6.5
+prodigyopt==1.1.2
+einops==0.8.1
+
+# ---- Core scientific / IO ----
+numpy==2.1.3
+scipy==1.15.2
+Pillow==11.1.0
+PyYAML==6.0.2
+tqdm==4.67.1
+
+# ---- Metrics (aes / color_difference / content_preserve / DeltaE2000) ----
+opencv-python==4.11.0.86
+scikit-image==0.25.2
+ftfy==6.3.1
+regex==2025.11.3
+
+# ---- Hugging Face Spaces demo ----
+gradio
+spaces
