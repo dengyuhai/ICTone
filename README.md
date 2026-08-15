@@ -22,7 +22,7 @@
 
 ## 📮 News
 
-- **[2026.08.15]** The ICTone online demo is now live on Hugging Face: [🤗 ICTone-Fill Demo](https://huggingface.co/spaces/ToneStyle/ICTone-Fill).
+- **[2026.08.15]** The ICTone online demo is now live on Hugging Face: [🤗 ICTone Demo](https://huggingface.co/spaces/ToneStyle/ICTone-Fill).
 - **[2026.08.14]** The ICTone LoRA weights are now available for direct inference: [🤗 ToneStyle/ICTone-Fill-LoRA](https://huggingface.co/ToneStyle/ICTone-Fill-LoRA).
 - **[2026.08.13]** Our large-scale triplet dataset, **TST100K** (100K+ content/reference/ground-truth triplets), is now available: [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K).
 - **[2026.07.15]** The **TST2K** benchmark is now available: [🤗 ToneStyle/TST2K](https://huggingface.co/datasets/ToneStyle/TST2K). It covers portrait, food, landscape, night, and lifestyle scenes.
