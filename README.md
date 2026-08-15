@@ -6,6 +6,7 @@
 <a href="https://arxiv.org/pdf/2604.16114"><img src="https://img.shields.io/badge/arXiv-2604.16114-b31b1b.svg" alt="Paper"></a>
 <a href="https://dengyuhai.github.io/ICTone_Project/"><img src="https://img.shields.io/badge/Project%20Page-Visit-blue" alt="Project Page"></a>
 <a href="https://huggingface.co/spaces/ToneStyle/ICTone-Fill"><img src="https://img.shields.io/badge/%F0%9F%A4%97-HF%20Demo-yellow.svg" alt="Hugging Face Demo"></a>
+
 <a href="https://huggingface.co/ToneStyle/ICTone-Fill-LoRA"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Model%20Weights-green.svg" alt="Model Weights"></a>
 <a href="https://huggingface.co/datasets/ToneStyle/TST100K"><img src="https://img.shields.io/badge/%F0%9F%A4%97-TST100K%20Dataset-blue.svg" alt="TST100K Dataset"></a>
 <a href="https://huggingface.co/datasets/ToneStyle/TST2K"><img src="https://img.shields.io/badge/%F0%9F%A4%97-TST2K%20Benchmark-blueviolet.svg" alt="TST2K Benchmark"></a>
