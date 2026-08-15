@@ -38,5 +38,5 @@ ftfy==6.3.1
 regex==2025.11.3
 
 # ---- Hugging Face Spaces demo ----
-gradio
+gradio==6.10.0
 spaces

@@ -5,6 +5,7 @@
 <!-- **Towards In-Context Tone Style Transfer with a Large-Scale Triplet Dataset** -->
 <a href="https://arxiv.org/pdf/2604.16114"><img src="https://img.shields.io/badge/arXiv-2604.16114-b31b1b.svg" alt="Paper"></a>
 <a href="https://dengyuhai.github.io/ICTone_Project/"><img src="https://img.shields.io/badge/Project%20Page-Visit-blue" alt="Project Page"></a>
+<a href="https://huggingface.co/spaces/ToneStyle/ICTone-Fill"><img src="https://img.shields.io/badge/%F0%9F%A4%97-HF%20Demo-yellow.svg" alt="Hugging Face Demo"></a>
 <a href="https://huggingface.co/ToneStyle/ICTone-Fill-LoRA"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Model%20Weights-green.svg" alt="Model Weights"></a>
 <a href="https://huggingface.co/datasets/ToneStyle/TST100K"><img src="https://img.shields.io/badge/%F0%9F%A4%97-TST100K%20Dataset-blue.svg" alt="TST100K Dataset"></a>
 <a href="https://huggingface.co/datasets/ToneStyle/TST2K"><img src="https://img.shields.io/badge/%F0%9F%A4%97-TST2K%20Benchmark-blueviolet.svg" alt="TST2K Benchmark"></a>
@@ -21,6 +22,7 @@
 
 ## 📮 News
 
+- **[2026.08.15]** The ICTone online demo is now live on Hugging Face: [🤗 ICTone-Fill Demo](https://huggingface.co/spaces/ToneStyle/ICTone-Fill).
 - **[2026.08.14]** The ICTone LoRA weights are now available for direct inference: [🤗 ToneStyle/ICTone-Fill-LoRA](https://huggingface.co/ToneStyle/ICTone-Fill-LoRA).
 - **[2026.08.13]** Our large-scale triplet dataset, **TST100K** (100K+ content/reference/ground-truth triplets), is now available: [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K).
 - **[2026.07.15]** The **TST2K** benchmark is now available: [🤗 ToneStyle/TST2K](https://huggingface.co/datasets/ToneStyle/TST2K). It covers portrait, food, landscape, night, and lifestyle scenes.
@@ -130,7 +132,7 @@ bash test_tst2k.sh             # Or: bash test_pst50.sh
 - ✅ Release the TST2K evaluation benchmark.
 - ✅ Release the training, inference, and evaluation code.
 - ✅ Release the ICTone LoRA weights.
-- ⬜ Launch the online Hugging Face demo.
+- ✅ Launch the online Hugging Face demo.
 
 ## 📧 Contact and Citation
 
