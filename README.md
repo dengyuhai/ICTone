@@ -53,8 +53,8 @@ pip install -r requirements.txt
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python inference.py \
-    --content   assets/example_content.jpg \
-    --reference assets/example_reference.jpg \
+    --content   assets/example_content.png \
+    --reference assets/example_reference.png \
     --flux-path black-forest-labs/FLUX.1-Fill-dev \
     --lora-path ToneStyle/ICTone-Fill-LoRA \
     --output-file ./output/example_output.png \
