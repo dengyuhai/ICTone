@@ -13,20 +13,20 @@
 >
 > Nankai University · OPPO AI Center
 
-## Overview
+## 📝 Overview
 
 ![ICTone teaser](assets/teaser.jpg)
 
 **ICTone** formulates **reference-based tone style transfer** as an **in-context generation** task. Unlike conventional methods that use two separate encoders to extract content and reference features before fusing them in a decoder, ICTone provides the content and reference images to a diffusion transformer as a **joint context**. This design allows the model to leverage the semantic priors of generative foundation models for semantics-aware tone transfer, substantially reducing improper color transfer and semantic misalignment—for example, incorrectly transferring the warm color of a railing onto a person's face.
 
-## News
+## 📮 News
 
 - **[2026.08.14]** The ICTone LoRA weights are now available for direct inference: [🤗 ToneStyle/ICTone-Fill-LoRA](https://huggingface.co/ToneStyle/ICTone-Fill-LoRA).
 - **[2026.08.13]** Our large-scale triplet dataset, **TST100K** (100K+ content/reference/ground-truth triplets), is now available: [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K).
 - **[2026.07.15]** The **TST2K** benchmark is now available: [🤗 ToneStyle/TST2K](https://huggingface.co/datasets/ToneStyle/TST2K). It covers portrait, food, landscape, night, and lifestyle scenes.
 - **[2026.06.18]** ICTone was accepted to ECCV 2026.
 
-## Environment
+## 💻 Environment
 
 We recommend using a dedicated Conda environment. The project has been tested with **Python 3.10 and CUDA GPUs with BF16 support**.
 
@@ -40,9 +40,9 @@ cd ICTone
 pip install -r requirements.txt
 ```
 
-## Quick Inference
+## 🚀 Quick Inference
 
-### Single Image Pair
+### 🖼️ Single Image Pair
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python inference.py \
@@ -56,9 +56,9 @@ CUDA_VISIBLE_DEVICES=0 python inference.py \
     --seed 666
 ```
 
-## Training and Evaluation
+## 🛠️ Training and Evaluation
 
-### Training
+### 🔧 Training
 
 **Data:** Download [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K) to `data/TST100K/`. The dataset contains 100K+ triplets organized through `content_images/`, `style_images/`, and `triplet.json`. See [`data/DOWNLOAD.md`](data/DOWNLOAD.md) for detailed download instructions.
 
@@ -79,7 +79,7 @@ GPUS=0 bash train_ictone.sh
 bash train_ictone.sh
 ```
 
-### Evaluation
+### 📊 Evaluation
 
 **Data preparation**
 
@@ -132,7 +132,7 @@ bash test_tst2k.sh             # Or: bash test_pst50.sh
 - ✅ Release the ICTone LoRA weights.
 - ⬜ Launch the online Hugging Face demo.
 
-## Contact and Citation
+## 📧 Contact and Citation
 
 For questions or collaboration opportunities, please open an issue or contact:
 
@@ -151,14 +151,14 @@ If this project, dataset, or benchmark is useful to your research, please cite:
 }
 ```
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 This codebase builds upon the following open-source projects:
 
 - **Project implementation:** the in-context editing implementation from [ICEdit](https://github.com/River-Zhang/ICEdit).
 - **Evaluation metrics:** [Neural Preset](https://github.com/ZHKKKe/NeuralPreset), [CDFlow](https://github.com/mergermarket/cdflow), and [AesCLIP](https://github.com/sxfly99/AesCLIP).
 
-## License
+## 📜 License
 
 - **Code:** non-commercial research use only. The code may be used, modified, and extended in academic research and other non-commercial settings. Commercial training, commercial fine-tuning, product integration, commercial system evaluation, resale, and commercial services are prohibited.
 - **TST100K and TST2K datasets:** non-commercial academic and research use only. Users must also comply with the original licenses of all upstream datasets, including PPR10K, MIT-Adobe FiveK, Food-101, COCO, and Landscape HQ; the stricter terms take precedence. See [`data/TST100K/README.md`](data/TST100K/README.md) for details.

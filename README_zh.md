@@ -13,20 +13,20 @@
 >
 > Nankai University · OPPO AI Center
 
-## 概述
+## 📝 概述
 
 ![ICTone teaser](assets/teaser.jpg)
 
 **ICTone** 将 **参考式色调风格迁移 (Reference-based Tone Style Transfer)** 建模为一个 **in-context generation** 任务：与传统方法用两条独立编码器分别抽取 content / reference 特征、再在 decoder 里融合不同，ICTone 直接把 content 和 reference 作为 **联合上下文** 送入 diffusion transformer，让模型利用生成大模型的语义先验去做语义感知的色调迁移，从根本上缓解了先前方法常见的「不当颜色迁移 / 语义错位」问题（例如把栏杆的暖色错误迁移到人脸上）。
 
-## 最新动态
+## 📮 最新动态
 
 - **[2026.08.14]** LoRA权重已发布， 可直接下载推理[🤗 ToneStyle/ICTone-Fill-LoRA](https://huggingface.co/ToneStyle/ICTone-Fill-LoRA)。
 - **[2026.08.13]** 大规模三元组数据集（100k+ content / reference / gt） **TST100K** 现已开源 [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K)。
 - **[2026-07.15]** **TST2K** Benchmark 现已开源 [🤗 ToneStyle/TST2K](https://huggingface.co/datasets/ToneStyle/TST2K)，覆盖 portrait / food / landscape / night / lifestyle。
 - **[2026.06.18]** ICTone 被 ECCV 2026 接收。
 
-## 环境配置
+## 💻 环境配置
 
 推荐使用 conda 创建独立环境。实测环境为 **Python 3.10 + CUDA GPU (支持 BF16)**。
 
@@ -40,9 +40,9 @@ cd ICTone
 pip install -r requirements.txt
 ```
 
-## 快速推理
+## 🚀 快速推理
 
-### 单对图片推理
+### 🖼️ 单对图片推理
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python inference.py \
@@ -57,9 +57,9 @@ CUDA_VISIBLE_DEVICES=0 python inference.py \
 ```
 
 
-## 训练与评测
+## 🛠️ 训练与评测
 
-### 训练
+### 🔧 训练
 
 **数据**：`data/TST100K/`（100k+ 三元组，`content_images/` + `style_images/` + `triplet.json`），从 [🤗 ToneStyle/TST100K](https://huggingface.co/datasets/ToneStyle/TST100K) 下载。详细下载命令见 [`data/DOWNLOAD.md`](data/DOWNLOAD.md)。
 
@@ -83,7 +83,7 @@ bash train_ictone.sh
 
 支持的环境变量：`GPUS / NPROC / CONFIG / PORT / RUN_TAG / LORA_PATH / MAX_STEPS / DEBUG`。日志与产物写入 `runs/<STAMP>_<RUN_TAG>/`（含 `train.log`、`ckpt/`、`validate/`、`config.yaml`）。WanDB 默认禁用。
 
-### 评测
+### 📊 评测
 **数据准备**
 
 需要先下载测试数据 [🤗 ToneStyle/TST2K](https://huggingface.co/datasets/ToneStyle/TST2K) 和 [🤗 zrgong/PST50](https://huggingface.co/datasets/zrgong/PST50)。详细下载命令见 [`data/DOWNLOAD.md`](data/DOWNLOAD.md)。
@@ -136,7 +136,7 @@ bash test_tst2k.sh          # 或 bash test_pst50.sh
 - ✅ 开源 ICTone LoRA 权重
 - ⬜ 上线 HuggingFace 在线 Demo
 
-## 联系方式与引用
+## 📧 联系方式与引用
 
 如有问题或合作意向，欢迎通过 Issue 联系，或直接联系：
 
@@ -155,14 +155,14 @@ bash test_tst2k.sh          # 或 bash test_pst50.sh
 }
 ```
 
-## 致谢
+## 🙏 致谢
 
 本代码建立在以下开源工作之上，特此致谢：
 
 - **项目代码**：参考了 [ICEdit](https://github.com/River-Zhang/ICEdit) 的 in-context editing 实现。
 - **指标评测**：感谢 [Neural Preset](https://github.com/ZHKKKe/NeuralPreset)、[CDFlow](https://github.com/mergermarket/cdflow)、[AesCLIP](https://github.com/sxfly99/AesCLIP) 提供的开源实现与权重。
 
-## 许可证
+## 📜 许可证
 
 - 代码：**Non-commercial research use only**。允许在学术研究和非商业环境下使用、修改和二次开发；商业训练 / 商业微调 / 产品化 / 商业系统评测 / 转售 / 商业服务均不允许。
 - 数据集 **TST100K** / **TST2K**：同样为 **non-commercial academic and research use only**。使用者需自行遵守 PPR10K、MIT-Adobe FiveK、Food-101、COCO、Landscape HQ 等上游数据集的原始 License（以更严格者为准），详见 [`data/TST100K/README.md`](data/TST100K/README.md)。
