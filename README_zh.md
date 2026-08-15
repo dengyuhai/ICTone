@@ -13,11 +13,11 @@
   <a href="https://huggingface.co/datasets/ToneStyle/TST2K"><img src="https://img.shields.io/badge/%F0%9F%A4%97-TST2K%20Benchmark-blueviolet.svg" alt="TST2K Benchmark"></a>
 </div>
 
-Yuhai Deng<sup>&#42;</sup>, Huimin She<sup>&#42;</sup>, Wei Shen<sup>†</sup>, Meng Li, Ruoxi Wu, Lunxi Yuan, Xiang Li<sup>✉</sup>
-
-<sup>&#42;</sup> 共同第一作者 · <sup>†</sup> 项目Leader · <sup>✉</sup> 通讯作者
-
-Nankai University · OPPO AI Center
+<p align="center">
+  Yuhai Deng<sup>&#42;</sup>, Huimin She<sup>&#42;</sup>, Wei Shen<sup>†</sup>, Meng Li, Ruoxi Wu, Lunxi Yuan, Xiang Li<sup>✉</sup><br>
+  <sup>&#42;</sup> 共同第一作者 · <sup>†</sup> 项目Leader · <sup>✉</sup> 通讯作者<br>
+  Nankai University · OPPO AI Center
+</p>
 
 
 ## 📝 概述
